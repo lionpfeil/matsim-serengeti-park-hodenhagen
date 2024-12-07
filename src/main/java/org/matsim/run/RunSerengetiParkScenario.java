@@ -208,6 +208,8 @@ public final class RunSerengetiParkScenario {
 		final Config config = ConfigUtils.loadConfig( args[ 0 ], customModules );
 		
 //		config.controler().setRoutingAlgorithmType( FastAStarLandmarks );
+
+		config.controler().setLastIteration(0);
 				
 		config.plansCalcRoute().setRoutingRandomness( 0. );
 						
